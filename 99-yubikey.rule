@@ -1,0 +1,5 @@
+# Primary Key
+ACTION=="remove", ENV{ID_SERIAL_SHORT}=="YOUR_PRIMARY_SERIAL", RUN+="/usr/local/bin/yubikey-lock.sh"
+
+# Backup Key
+ACTION=="remove", ENV{ID_SERIAL_SHORT}=="YOUR_BACKUP_SERIAL", RUN+="/usr/local/bin/yubikey-lock.sh"
